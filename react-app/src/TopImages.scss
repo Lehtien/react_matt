@@ -1,0 +1,17 @@
+.top__images {
+  padding-top: 1em;
+  .top__image {
+    max-width: 40%;
+    border-radius: 1em;
+    margin: 1em;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .top__images {
+    .top__image {
+      max-width: 90%;
+    }
+  }
+}

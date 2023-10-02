@@ -1,0 +1,21 @@
+.main__images__wrapper {
+  position: relative;
+}
+.main__images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  background-color: #282c34;
+  padding: 1em;
+  padding-top: 5em;
+  .main__image {
+    width: 100%;
+    border-radius: 1em;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.5);
+  }
+}
+@media screen and (max-width:1024px) {
+  .main__images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
