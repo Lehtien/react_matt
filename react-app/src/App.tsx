@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import TopImages from "./TopImages"
 import MainImages from "./MainImages"
+import Introduction from "./Introduction"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <header className="App-header">
         <TopImages />
       </header>
+      <Introduction />
       <MainImages />
     </div>
   );
