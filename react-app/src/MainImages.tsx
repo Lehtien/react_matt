@@ -5,7 +5,7 @@ import ModalImage from "./ModalImage"
 const MainImages = () => {
   const items: string[] = [];
   for (let i = 1; i <= 20; i++) {
-    items.push(`/images/main/IMG_${i}.webp`);
+    items.push(`${process.env.PUBLIC_URL}/images/main/IMG_${i}.webp`);
   }
   
   const [imageUrl, setImageUrl] = useState('');
@@ -20,7 +20,7 @@ const MainImages = () => {
   return (
     <div className='main__images__wrapper'>
       <div className='main__images'>
-        {items.map((item, i) => <img className="main__image" src={item} alt="top-image" key={i} onClick={getImageUrl}/>)}
+        {items.map((item, i) => <img className="main__image" src={item} alt="main-image" key={i} onClick={getImageUrl}/>)}
       </div>
       {/* { imageUrl !== '' &&  <ModalImage image_url={imageUrl} closeModal={closeModal}/> } */}
     </div>

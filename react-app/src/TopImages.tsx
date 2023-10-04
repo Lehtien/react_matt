@@ -6,7 +6,7 @@ import '@splidejs/splide/css';
 const TopImages = () => {
   const items: string[] = [];
   for (let i = 1; i <= 6; i++) {
-    items.push(`/images/top/${i}.webp`);
+    items.push(`${process.env.PUBLIC_URL}/images/top/${i}.webp`);
   }
 
   return (
