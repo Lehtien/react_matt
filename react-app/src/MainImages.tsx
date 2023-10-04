@@ -9,6 +9,7 @@ const MainImages = () => {
   }
 
   const [imageUrl, setImageUrl] = useState('');
+  const [targetTop, setTargetTop] = useState(0);
   const getImageUrl = (event: React.MouseEvent<HTMLElement>) => {
     const image_url = event.currentTarget.getAttribute("src") || '';
     setImageUrl(image_url);
@@ -35,7 +36,7 @@ const MainImages = () => {
       <div className='main__images' ref={main_images}>
         {items.map((item, i) => <img className="main__image" src={item} alt="main-image" key={i} onClick={getImageUrl} />)}
       </div>
-      {/* { imageUrl !== '' &&  <ModalImage image_url={imageUrl} closeModal={closeModal}/> } */}
+      {imageUrl !== '' && <ModalImage image_url={imageUrl} closeModal={closeModal} />}
     </div>
   );
 };
