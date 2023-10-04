@@ -19,3 +19,16 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.rotate__image {
+  animation: rotateImage 2s linear alternate;
+}
+
+@keyframes rotateImage {
+ 0% {
+  transform: rotateY(0deg);
+ }
+ 100% {
+  transform: rotateY(720deg);
+ }  
+}
