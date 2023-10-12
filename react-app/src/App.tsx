@@ -4,7 +4,7 @@ import './App.css';
 import TopImages from "./TopImages"
 import MainImages from "./MainImages"
 import Introduction from "./Introduction"
-
+import CardImages from "./CardImages"
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <TopImages />
       </header>
       <Introduction />
+      <CardImages />
       <MainImages />
     </div>
   );
