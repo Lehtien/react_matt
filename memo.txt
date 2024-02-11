@@ -1,3 +1,4 @@
 docker-compose run --rm node sh -c 'npx create-react-app react-app --template typescript'
 
 yarn add sass
+yarn add @splidejs/react-splide
